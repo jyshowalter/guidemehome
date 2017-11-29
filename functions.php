@@ -4,7 +4,7 @@ function gform_radioNext($form) {
 $script = '(function($){' .
 '$(".gfield_radio label").each(function(){' .
 '$(this).click(function() {' .
-'console.log("clicked")' .
+'$(this).closest("submit").trigger("click")' .
 '});' .
 '})' .
 '})(jQuery);';
